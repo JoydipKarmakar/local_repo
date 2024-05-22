@@ -56,40 +56,41 @@
         <p class="tab-links" onclick="opentab('experience')">Experience</p>
         <p class="tab-links" onclick="opentab('education')">Education</p>
     </div>
-    <div class="tab-content" id="skills">
+    <div class="tab-content active-tab" id="skills">
         <ul>
             <li><span>UX/UI Design</span><br> Design Web/App interface</li>
             <li><span>Web Development</span><br> Web App Development</li>
             <li><span>Graphic Design</span><br> Building Android/iOS apps</li>
         </ul>
     </div>
-    <div class="tab-content" id="experience" style="display: none;">
-        <!-- Experience content goes here -->
-    </div>
-    <div class="tab-content" id="education" style="display: none;">
-        <!-- Education content goes here -->
-    </div>
-</div>
-
-            </div>
-        </div>
-    </div>
-    <section id="services">
-        <h2>Services</h2>
-        
-    </section>
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <p>Here are some of my recent works:</p>
+    <div class="tab-content" id="experience">
         <ul>
-            <li>Project 1</li>
-            <li>Project 2</li>
-            <li>Project 3</li>
+            <li><span>UX/UI Design</span><br> Design Web/App interface</li>
+            <li><span>Web Development</span><br> Web App Development</li>
+            <li><span>Graphic Design</span><br> Building Android/iOS apps</li>
         </ul>
-    </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>You can reach me at myemail@example.com or call me at 123-456-7890. I look forward to hearing from you!</p>
-    </section>
+    </div>
+    <div class="tab-content" id="education">
+        <ul>
+            <li><span>UX/UI Design</span><br> Design Web/App interface</li>
+            <li><span>Web Development</span><br> Web App Development</li>
+            <li><span>Graphic Design</span><br> Building Android/iOS apps</li>
+        </ul>
+    </div>
+<script>
+     
+     var tablinks = document.getElementsByClassName("tab-links")
+     var tabcontent = document.getElementsByClassName("tab-content");
+     function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontent){
+            tablink.classList.remove("active-tab");
+        }
+     }
+
+
+</script>
 </body>
 </html>
